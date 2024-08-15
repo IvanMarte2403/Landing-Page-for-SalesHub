@@ -1,4 +1,64 @@
-
 h1{
-    background-color: black;
+    color: var(--color-primary);
 }
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: var(--spacing-lg);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-nav{
+    width: 20%;
+}
+
+.logo-nav img{
+    width: 100%;
+}
+
+
+// ===Servicios Container
+
+.servicios-container{
+    display: flex;
+    flex-direction: row;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        li{
+            list-style: none;
+            margin-right: var(--spacing-lg);
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: var(--color-primary);
+                font-size: var(--font-size-xl);
+                font-family: var(--font-1);
+                font-weight: medium;
+            }
+        }
+    }   
+
+    
+}
+
+.botton-contactanos{
+    background-color: var(--color-primary);
+    border-radius: 2rem;
+    padding: var(--spacing-md);
+    a{
+        text-decoration: none;
+        color: var(--color-secondary);
+        font-size: var(--font-size-xl);
+        font-weight: 600;
+    }
+    i{
+        color: var(--color-secondary);
+        }
+}
+
+
