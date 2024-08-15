@@ -1,0 +1,53 @@
+.divisor-1 {
+    height: 6rem;
+    background-color: var(--color-primary);
+    /* Eliminamos la línea de borde */
+    /* border: 1px solid var(--color-secondary); */
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-xxxl);
+    padding: var(--spacing-md);
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    font-family: var(--font-2);
+    transform: rotate(3deg); 
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añadir sombra */
+}
+
+.divisor-2 {
+    height: 6rem;
+    background-color: var(--color-primary);
+    /* Eliminamos la línea de borde */
+    /* border: 1px solid var(--color-secondary); */
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-xxxl);
+    padding: var(--spacing-md);
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    font-family: var(--font-2);
+    transform: rotate(-4deg);
+    top: -7rem;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añadir sombra */
+}
+
+
+.divisor-1, .divisor-2 {
+    overflow: hidden;  /* Esconde el texto que sale del contenedor */
+}
+
+.divisor-1 span, .divisor-2 span {
+    display: inline-block;
+    white-space: nowrap;  /* Mantiene todo el texto en una sola línea */
+}
+
+.divisor{
+    width: 100%;
+    margin-top: var(--spacing-xxxl);
+}
