@@ -26,13 +26,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Animación para .row-clientes
-    gsap.from(".row-clientes", {
+    // Animación para .row-clients
+    gsap.from(".row-clients", {
         opacity: 0, // Opacidad inicial
+        y: 50, // Aparece desde abajo
         duration: 1, // Duración de la animación
         ease: "power2.out", // Efecto de suavizado
         scrollTrigger: {
-            trigger: ".row-clientes",
+            trigger: ".row-clients",
             start: "top 80%", // Inicia la animación cuando la parte superior del elemento está en el 80% de la pantalla
             toggleActions: "play none none none" // Reproduce la animación al entrar en la vista
         }
@@ -41,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Línea de tiempo para los clientes
     const tl = gsap.timeline({
         scrollTrigger: {
-            trigger: "#clientes-title",
+            trigger: "#clientes",
             start: "top center", // Inicia la animación cuando la parte superior del elemento está en el centro de la pantalla
             toggleActions: "play none none none" // Reproduce la animación al entrar en la vista
         }
@@ -86,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
             scrollTrigger: {
                 trigger: cliente,
                 start: "top 80%", // Inicia la animación cuando la parte superior del elemento está en el 80% de la pantalla
-                toggleActions: "play none none   none" // Reproduce la animación al entrar en la vista
+                toggleActions: "play none none none" // Reproduce la animación al entrar en la vista
             },
             onComplete: () => {
                 gsap.to(`${cliente} i`, { x: 0, duration: 0.5 }); // Vuelve a la posición inicial
