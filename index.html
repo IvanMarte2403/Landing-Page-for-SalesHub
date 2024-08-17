@@ -21,9 +21,9 @@
         <!-- Ul de Servicios -->
         <div class="servicios-container">
             <ul>
-                <li><a href="">SERVICIOS</a></li>
-                <li><a href="">CLIENTES</a></li>
-                <li><a href="">SOBRE NOSOTROS</a></li>
+                <li><a href="#servicios">SERVICIOS</a></li>
+                <li><a href="#clientes">CLIENTES</a></li>
+                <li><a href="#sobre-nosotros">SOBRE NOSOTROS</a></li>
             </ul>
         </div>
         
@@ -75,13 +75,13 @@
     </div>
     
     <!-- Sobre Nosotros -->
-    <div class="sobre-nosotros">
+    <div id="sobre-nosotros" class="sobre-nosotros">
         <div class="columns-sobre">
             <h2>
                 SOBRE NOSOTROS
             </h2>
             
-            <div class="container-video">
+            <div id="container-video" class="container-video">
                 <img src="img/videos/video.png" alt="">
             </div>
 
@@ -90,7 +90,7 @@
         <div class="columns-sobre">
             <p class="marketeros-text">Somos marketeros que les gusta meterse hasta la cocina de tu negocio, con una sola misión, hacerte vender más en menos de <b>30 Días</b> </p>
 
-            <div class="toggle">
+            <div id="toggle-1" class="toggle">
                 <div class="toggle-title">
                     <h2>10</h2> <p>Años de Experiencia</p> <i class="fas  fa-arrow-down"></i> 
                 </div>
@@ -100,14 +100,14 @@
                 </div>
             </div>
 
-            <div class="toggle">
+            <div id="toggle-2" class="toggle">
                 <div class="toggle-title">
                     <h2>42</h2> <p>Negocios Escalados</p> <i class="fas  fa-arrow-down"></i> 
                 </div>
 
             </div>
 
-            <div class="toggle">
+            <div id="toggle-3" class="toggle">
                 <div class="toggle-title">
                     <h2>25M</h2> <p>Generados en ROI</p> <i class="fas  fa-arrow-down"></i> 
                 </div>
@@ -121,7 +121,7 @@
 
     <!-- Nuestros Servicios -->
 
-    <div class="nuestros-servicios">
+    <div  id="servicios"class="nuestros-servicios">
         <div class="title-container-servicios">
             <h1 class="title-nuestros-servicios">
                 NUESTROS <br> SERVICIOS
@@ -133,7 +133,7 @@
         </div>
         
         <!-- Servicio -->
-        <div class="categorias-servicios">
+        <div id="servicio-1" class="categorias-servicios">
             <div class="contenedor-servicio">
                 <h1>Campañas Publicitarias </h1>
                 <i class="fas fa-arrow-down"></i>
@@ -141,7 +141,7 @@
         </div>
 
         <!-- Servicio -->
-        <div class="categorias-servicios">
+        <div id="servicio-2" class="categorias-servicios">
             <div class="contenedor-servicio">
                 <h1>Ecommerce</h1>
                 <i class="fas fa-arrow-down"></i>
@@ -149,7 +149,7 @@
         </div>
 
         <!-- Servicio -->
-        <div class="categorias-servicios">
+        <div id="servicio-3" class="categorias-servicios">
             <div class="contenedor-servicio">
                 <h1>Funnels de Venta</h1>
                 <i class="fas fa-arrow-down"></i>
@@ -157,7 +157,7 @@
         </div>
 
          <!-- Marca Personal -->
-         <div class="categorias-servicios">
+         <div id="servicio-4" class="categorias-servicios">
             <div class="contenedor-servicio">
                 <h1>Marca Personal </h1>
                 <i class="fas fa-arrow-down"></i>
@@ -167,7 +167,7 @@
 
     <!-- Clientes -->
 
-    <div class="clientes">
+    <div id="#clientes" class="clientes">
         <div class="clientes-title">
             <div><h1>CLIENTES <span>•</span> </h1></div>
             <p>No solo entregaron su confianza, si no, que también logramos crecer con ellos. Hoy nuestros a <b>casos de éxito </b></p>
@@ -175,19 +175,19 @@
 
         <div class="clients-selector">
             <!-- Campañas -->
-            <div class="container-selector">
+            <div id="cliente-1" class="container-selector">
                 <h3>Campañas <i class="far fa-heart"></i></h3>
             </div>
 
-            <div class="container-selector">
+            <div id="cliente-2" class="container-selector">
                 <h3>Ecommerce <i class="fas fa-shopping-cart"></i></h3>
             </div>
             
-            <div class="container-selector">
+            <div id="cliente-3" class="container-selector">
                 <h3>Funnels de Venta <i class="fas fa-filter"></i></h3>
             </div>
 
-            <div class="container-selector">
+            <div id="cliente-4" class="container-selector">
                 <h3>Marca Personal <i class="fas fa-user"></i></h3>            </div>
 
         </div>
@@ -384,6 +384,9 @@
 <script src="main/movimientotexto.js"></script>
 <script src="main/animation-number-30.js"></script>
 <script src="main/temporizador.js"></script>
-
+<script src="main/sobre-nosotros-animations.js" ></script>
+<script src="main/clientes-animation.js"></script>
+<script src="main/nuestros-servicios-animations.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 <script src="main/selector-clients.js"></script>
 </html>

@@ -33,32 +33,50 @@ nav{
             list-style: none;
             margin-right: var(--spacing-lg);
             text-align: center;
-            a{
+            a {
                 text-decoration: none;
                 color: var(--color-primary);
                 font-size: var(--font-size-xl);
                 font-family: var(--font-1);
                 font-weight: medium;
-            }
+                transition: all 0.3s ease; 
+
+                &:hover {
+                    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Efecto de resplandor */
+                }
+
+                &:active {
+                    text-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Resplandor más intenso al hacer clic */
+                }
+
         }
     }   
 
     
 }
 
-.botton-contactanos{
+}
+.botton-contactanos {
     background-color: var(--color-primary);
     border-radius: 2rem;
     padding: var(--spacing-md);
-    a{
+    transition: background-color 0.3s ease; 
+    cursor: pointer;
+
+    a {
         text-decoration: none;
-        color: var(--color-secondary);  
+        color: var(--color-secondary);
         font-size: var(--font-size-xl);
         font-weight: 600;
     }
-    i{
+
+    i {
         color: var(--color-secondary);
-        }
+    }
+
+    &:hover {
+        background-color: lighten(#FF30D0, 10%); 
+    }
 }
 
 

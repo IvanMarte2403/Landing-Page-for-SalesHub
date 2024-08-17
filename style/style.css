@@ -46,6 +46,7 @@ html, body {
   background-color: var(--background-color-2);
   font-family: var(--font-1);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* Reset básico */
@@ -53,6 +54,10 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a {
+  transition: all 0.3s ease;
 }
 
 h1 {
@@ -95,12 +100,21 @@ nav {
   font-size: var(--font-size-xl);
   font-family: var(--font-1);
   font-weight: medium;
+  transition: all 0.3s ease;
+}
+.servicios-container ul li a:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Efecto de resplandor */
+}
+.servicios-container ul li a:active {
+  text-shadow: 0 0 20px rgb(255, 255, 255); /* Resplandor más intenso al hacer clic */
 }
 
 .botton-contactanos {
   background-color: var(--color-primary);
   border-radius: 2rem;
   padding: var(--spacing-md);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 .botton-contactanos a {
   text-decoration: none;
@@ -110,6 +124,9 @@ nav {
 }
 .botton-contactanos i {
   color: var(--color-secondary);
+}
+.botton-contactanos:hover {
+  background-color: #ff63dc;
 }
 
 .container {
