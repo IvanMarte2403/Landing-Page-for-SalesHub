@@ -76,3 +76,63 @@
     color: var(--color-third);
     opacity: 0;
   }
+
+@media only screen and (max-width:600px){
+
+    .footerContainer{
+        padding: 4rem 2rem 4rem 2rem;
+    }
+    
+    .footer-title{
+        h1{
+            font-size: var(--font-size-xxxl) !important;
+        }
+    }
+    .info-contacto{
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: var(--spacing-xl);
+
+        div{
+            margin-top: var(--spacing-md);
+        }
+    }
+
+
+    .nav-footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .logo-nav{
+            width: 60%;
+        }
+
+        .servicios-container{
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: var(--spacing-md);
+            li{
+                text-align: center;
+                font-size: var(--font-size-sm);
+                margin-right: 0;
+                width: 20%;
+            }
+        }
+    }
+
+
+    .redes{
+        width: 100%;
+        justify-content: center;
+        margin-top: var(--spacing-md);
+        justify-content: space-around;
+        align-items: center;
+    }
+}

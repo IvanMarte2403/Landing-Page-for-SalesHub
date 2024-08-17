@@ -69,3 +69,18 @@
     }
 
 }
+
+
+@media only screen and (max-width: 600px){
+    .init-container{
+        width: 80%;
+    }
+
+    .title2-container h1{
+        font-size: 4vh!important;
+    }
+
+    .title-dias{
+        font-size: 6vh!important;
+    }
+}

@@ -61,3 +61,28 @@
         }
     }
 }
+
+
+@media only screen and (max-width:600px){
+    .containerTestimonios{
+        padding: 4rem 2rem 4rem 2rem;
+    }
+
+    .testimonios-title{
+        flex-direction: column !important;
+        h1{
+            font-size: var(--font-size-xxl) !important;
+            margin-bottom: var(--spacing-md);
+        }
+    }
+
+
+    .testimonios-container{
+        .testimonios-row{
+            flex-direction: column !important;
+            .testimonio{
+                width: 100%;
+            }
+        }
+    }
+}

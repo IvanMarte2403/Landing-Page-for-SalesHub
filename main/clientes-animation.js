@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Línea de tiempo para los clientes
     const tl = gsap.timeline({
         scrollTrigger: {
-            trigger: "#clientes",
+            trigger: ".clientes-selector",
             start: "top center", // Inicia la animación cuando la parte superior del elemento está en el centro de la pantalla
             toggleActions: "play none none none" // Reproduce la animación al entrar en la vista
         }

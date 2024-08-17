@@ -77,3 +77,39 @@
         justify-content: space-between;
     }
 }
+
+@media only screen and (max-width:620px){
+
+    .clientes{
+        padding: 4rem 2rem 4rem 2rem;
+    }
+
+    .clientes-title{
+        flex-direction: column !important;
+        p{
+            width: 100%;
+            margin-top: var(--spacing-md);
+        }
+    }
+
+    .clients-selector{
+        flex-direction: column !important;
+
+        .container-selector{
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: var(--spacing-md);
+        }
+    }
+
+    .container-clients{
+        flex-direction: column;
+        
+    .row-clients{
+        flex-direction: row !important;
+    }
+    }
+
+    
+}

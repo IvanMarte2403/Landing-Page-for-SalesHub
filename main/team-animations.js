@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Línea de tiempo para los miembros del equipo
     const tlTeam = gsap.timeline({
         scrollTrigger: {
-            trigger: ".team-section",
+            trigger: ".team-title",
             start: "top 80%", // Inicia la animación cuando la parte superior del elemento está en el 80% de la pantalla
             toggleActions: "play none none none" // Reproduce la animación al entrar en la vista
         }
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Animación tipo foto para los miembros adicionales
     const tlMembers = gsap.timeline({
         scrollTrigger: {
-            trigger: ".team-section",
+            trigger: ".team-members",
             start: "top 80%", // Inicia la animación cuando la parte superior del elemento está en el 80% de la pantalla
             toggleActions: "play none none none" // Reproduce la animación al entrar en la vista
         }
