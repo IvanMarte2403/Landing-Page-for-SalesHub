@@ -304,6 +304,10 @@ nav {
   margin-top: var(--spacing-md);
 }
 
+.bottom-descubre-mas {
+  height: 6vh !important;
+}
+
 .nuestros-servicios {
   padding: 4rem 12rem 4rem 12rem;
 }
@@ -311,9 +315,30 @@ nav {
   width: 100%;
   display: flex;
   flex-direction: row;
+  margin-bottom: var(--spacing-xxl);
 }
 .nuestros-servicios .title-container-servicios h1 {
   font-family: var(--font-2);
   font-size: 3rem;
   color: var(--color-primary);
+  margin-right: var(--spacing-xxxl);
+}
+.nuestros-servicios .categorias-servicios {
+  width: 100%;
+  margin-bottom: var(--spacing-xl);
+}
+
+.contenedor-servicio {
+  padding: var(--spacing-xl);
+  background: rgba(217, 217, 217, 0.1); /* Color de fondo D9D9D9 al 10% de opacidad */
+  margin-top: var(--spacing-lg);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 2rem;
+  width: 100%;
+}
+.contenedor-servicio i {
+  color: var(--color-primary);
+  font-size: var(--font-size-xxl);
 }/*# sourceMappingURL=style.css.map */
