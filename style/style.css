@@ -472,4 +472,70 @@ nav {
   flex-direction: row;
   justify-content: center;
   margin-top: var(--spacing-md);
+}
+
+.containerTeam {
+  background-color: var(--background-color-3);
+  padding: 4rem 12rem 4rem 12rem;
+}
+
+.team-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.team-title div {
+  display: flex;
+  flex-direction: row;
+}
+.team-title h1 {
+  font-family: var(--font-2);
+  font-size: var(--font-size-xxxl);
+}
+.team-title h1 span {
+  font-family: var(--font-1);
+  color: var(--color-third);
+}
+.team-title b {
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-primary);
+}
+
+.team-selector {
+  margin-top: var(--spacing-xl);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  color: var(--color-primary);
+  justify-content: space-around;
+  align-items: center;
+}
+.team-selector .container-team-selector {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 2rem;
+  border: 2px solid var(--color-primary);
+  padding: var(--spacing-sm);
+  cursor: pointer;
+}
+.team-selector .container-team-selector h3 {
+  margin-right: var(--spacing-sm);
+}
+.team-selector .container-team-selector.selected {
+  background-color: var(--background-color-3);
+  color: var(--color-primary);
+}
+.team-selector .container-team-selector.unselected {
+  background: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.team-members {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: var(--spacing-xxl);
 }/*# sourceMappingURL=style.css.map */
