@@ -17,7 +17,7 @@
   --color-third: #FF30D0;
   --background-color-1: #ffff;
   --background-color-2: #090042;
-  --background-color-3: #0000;
+  --background-color-3: #000;
   /* Fuentes */
   --font-1: "League Spartan";
   --font-2: "Phonk Regular";
@@ -39,6 +39,7 @@
   --spacing-xl: 2rem; /* 32px */
   --spacing-xxl: 4rem; /* 48px */
   --spacing-xxxl: 8rem; /* 48px */
+  --spacing-xxxxl: 12rem; /* 48px */
 }
 
 html, body {
@@ -133,10 +134,11 @@ nav {
   width: 100%;
 }
 .title-container .title2-container {
+  margin-bottom: var(--spacing-xl);
   width: 100%;
 }
 .title-container .title2-container h1 {
-  font-size: var(--font-size-xxxl);
+  font-size: var(--font-size-xxxxl);
   font-weight: 700;
   text-align: center;
 }
@@ -221,4 +223,97 @@ nav {
 .divisor {
   width: 100%;
   margin-top: var(--spacing-xxxl);
+  background-color: var(--background-color-3);
+}
+
+.sobre-nosotros {
+  width: 100%;
+  background-color: var(--background-color-3);
+  padding: 0 var(--spacing-xxxxl) 0 var(--spacing-xxxxl);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  color: var(--color-primary);
+  padding-bottom: var(--spacing-xl);
+}
+.sobre-nosotros .columns-sobre {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.sobre-nosotros .columns-sobre h2 {
+  font-family: var(--font-2);
+  font-size: 2rem;
+  color: var(--color-primary);
+  width: 100%;
+}
+.sobre-nosotros .columns-sobre .container-video {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: var(--spacing-xl);
+}
+.sobre-nosotros .columns-sobre .container-video img {
+  width: 100%;
+  height: auto;
+}
+.sobre-nosotros .columns-sobre p {
+  color: var(--color-primary);
+}
+.sobre-nosotros .columns-sobre .marketeros-text {
+  margin-bottom: var(--spacing-xl);
+  font-size: var(--font-size-xl);
+}
+.sobre-nosotros .columns-sobre .marketeros-text b {
+  color: var(--color-third);
+}
+
+.toggle {
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+  margin-top: var(--spacing-xl);
+  background: rgba(41, 41, 41, 0.4); /* Color de fondo casi transparente */
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 1rem;
+}
+.toggle .toggle-title {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle .toggle-title h2 {
+  font-family: var(--font-2);
+  font-size: 3rem;
+  width: 10%;
+  text-align: center;
+}
+.toggle .toggle-title p {
+  font-size: var(--font-size-xl);
+  width: 30%;
+  text-align: center;
+}
+.toggle .toggle-title i {
+  font-size: 1rem;
+}
+.toggle .container-toggle {
+  margin-top: var(--spacing-md);
+}
+
+.nuestros-servicios {
+  padding: 4rem 12rem 4rem 12rem;
+}
+.nuestros-servicios .title-container-servicios {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.nuestros-servicios .title-container-servicios h1 {
+  font-family: var(--font-2);
+  font-size: 3rem;
+  color: var(--color-primary);
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+.nuestros-servicios{
+    padding: 4rem 12rem 4rem 12rem;
+
+    .title-container-servicios{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        
+        h1{
+            font-family: var(--font-2);
+            font-size: 3rem;
+            color: var(--color-primary);
+        }
+    }
+
+}
+

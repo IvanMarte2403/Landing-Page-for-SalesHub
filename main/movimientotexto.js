@@ -10,6 +10,7 @@ gsap.fromTo("#divisor-1-text",
         duration: 10,  // Duración de la animación
         ease: "linear",  // Movimiento lineal
         repeat: -1,  // Repetir indefinidamente
+        
     }
 );
 

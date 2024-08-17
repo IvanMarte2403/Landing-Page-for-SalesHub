@@ -19,7 +19,7 @@
     --color-third: #FF30D0;
     --background-color-1: #ffff;
     --background-color-2: #090042;
-    --background-color-3: #0000;
+    --background-color-3: #000;
     
     /* Fuentes */
 
@@ -45,6 +45,7 @@
     --spacing-xl: 2rem; /* 32px */
     --spacing-xxl: 4rem; /* 48px */
     --spacing-xxxl: 8rem; /* 48px */
+    --spacing-xxxxl: 12rem; /* 48px */
 
 }   
 
@@ -65,3 +66,5 @@ html,body{
 @import 'nav/navStyle';
 @import 'init/init';
 @import 'divisor/divisor';
+@import 'sobre-nosotros/sobre-nosotros';
+@import 'servicios/servicios'
