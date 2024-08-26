@@ -1,104 +1,201 @@
-h1{
-    color: var(--color-primary);
-}
+    h1 {
+        color: var(--color-primary);
+    }
 
-nav{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: var(--spacing-lg);
-    justify-content: space-around;
-    align-items: center;
-}
-
-.logo-nav{
-    width: 20%;
-}
-
-.logo-nav img{
-    width: 100%;
-}
-
-
-// ===Servicios Container
-
-.servicios-container{
-    display: flex;
-    flex-direction: row;
-
-    ul{
+    nav {
         display: flex;
         flex-direction: row;
-        li{
-            list-style: none;
-            margin-right: var(--spacing-lg);
-            text-align: center;
-            a {
-                text-decoration: none;
-                color: var(--color-primary);
-                font-size: var(--font-size-xl);
-                font-family: var(--font-1);
-                font-weight: medium;
-                transition: all 0.3s ease; 
+        width: 100%;
+        padding: var(--spacing-lg);
+        justify-content: space-around;
+        align-items: center;
+        position: relative; /* Añadido para que la posición absoluta funcione correctamente */
+    }
 
-                &:hover {
-                    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Efecto de resplandor */
+    .logo-nav {
+        width: 20%;
+    }
+
+    .logo-nav img {
+        width: 100%;
+    }
+
+    // ===Servicios Container
+
+    .servicios-container {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        top: 0;
+        background-color: var(--background-color-2);
+        right: 0;
+        height: 100vh;
+        width: 80%;
+        background-color: var(--background-color-2);
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+
+            li {
+                list-style: none;
+                margin-right: var(--spacing-lg);
+                text-align: center;
+
+                a {
+                    text-decoration: none;
+                    color: var(--color-primary);
+                    font-size: var(--font-size-xl);
+                    font-family: var(--font-1);
+                    font-weight: medium;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Efecto de resplandor */
+                    }
+
+                    &:active {
+                        text-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Resplandor más intenso al hacer clic */
+                    }
                 }
-
-                &:active {
-                    text-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Resplandor más intenso al hacer clic */
-                }
-
+            }
         }
-    }   
 
-    
-}
+        &.active {
+            transform: translateX(0);
+            height: 100vh;
+            z-index: 1000;
 
-}
-.botton-contactanos {
-    background-color: var(--color-primary);
-    border-radius: 2rem;
-    padding: var(--spacing-md);
-    transition: background-color 0.3s ease; 
-    cursor: pointer;
+            ul {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: start;
+                justify-content: start;
+                padding: var(--spacing-lg);
 
-    a {
-        text-decoration: none;
-        color: var(--color-secondary);
-        font-size: var(--font-size-xl);
-        font-weight: 600;
-    }
+                li {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
 
-    i {
-        color: var(--color-secondary);
-    }
-
-    &:hover {
-        background-color: lighten(#FF30D0, 10%); 
-    }
-}
-
-@media only screen and (max-width: 600px){
-    .nav-principal{
-        flex-direction: column; 
-
-        .logo-nav{
-            width: 60%;
-        }
-        
-        .servicios-container{
-            justify-content: space-around;
-            margin-bottom: var(--spacing-lg);
-            ul{
-                justify-content: space-around;
-                margin-top: var(--spacing-lg);
-                li{
-                    margin-right: 0;
-                    width: 20%;
-                    font-size: var(--font-size-xs);
+                    a {
+                        font-size: var(--font-size-xxxl);
+                        text-align: left;
+                        margin-top: var(--spacing-lg);
+                    }
                 }
             }
         }
     }
-}
+
+    .botton-contactanos {
+        background-color: var(--color-primary);
+        border-radius: 2rem;
+        padding: var(--spacing-md);
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            color: var(--color-secondary);
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+        }
+
+        i {
+            color: var(--color-secondary);
+        }
+
+        &:hover {
+            background-color: lighten(#FF30D0, 10%);
+        }
+    }
+
+    .hamburger-menu {
+        display: none;
+        cursor: pointer;
+        position: absolute; /* Asegura que se posicione relativo al contenedor nav */
+        top: var(--spacing-md); /* Ajusta según sea necesario */
+        right: var(--spacing-lg); /* Ajusta según sea necesario */
+
+        i {
+            font-size: var(--font-size-xxl);
+            color: var(--color-primary);
+        }
+    }
+
+    .close-menu {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+
+        i {
+            font-size: var(--font-size-xxl);
+            color: var(--color-primary);
+        }
+    }
+
+    @media only screen and (max-width: 680px) {
+        html, body {
+            overflow-x: hidden;
+        }
+
+        .nav-principal {
+            flex-direction: column;
+
+            .logo-nav {
+                width: 60%;
+            }
+
+            .hamburger-menu {
+                display: block;
+                position: absolute; /* Mantener la posición absoluta */
+                top: var(--spacing-md); /* Ajusta la distancia desde la parte superior */
+                right: var(--spacing-lg); /* Asegura que esté en la parte derecha */
+            }
+
+            .servicios-container {
+                justify-content: space-around;
+                margin-bottom: var(--spacing-lg);
+
+                ul {
+                    justify-content: space-around;
+                    margin-top: var(--spacing-lg);
+
+                    li {
+                        margin-right: 0;
+                        width: 20%;
+                        font-size: var(--font-size-xs);
+                    }
+                }
+            }
+
+            .botton-contactanos {
+                display: none;
+            }
+
+            .close-menu {
+                display: block;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .servicios-container.active {
+            display: block;
+            top: 2vh;
+            right: 0;
+            background-color: var(--background-color-2);
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+    }

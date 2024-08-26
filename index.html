@@ -6,32 +6,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="img/sales-Hub-icon.png" type="image/x-icon">
+
 
     <link rel="stylesheet" href="">
     <title>Sales Hub</title>
 </head>
 <body>
-
-    <!-- Nav -->
-    <nav class="nav-principal">
-        <div class="logo-nav">
-            <img src="img/SalesHubLogo.png" alt="">
-        </div>
-
-        <!-- Ul de Servicios -->
-        <div class="servicios-container">
-            <ul>
-                <li><a href="#servicios">SERVICIOS</a></li>
-                <li><a href="#clientes">CLIENTES</a></li>
-                <li><a href="#sobre-nosotros">SOBRE NOSOTROS</a></li>
-            </ul>
-        </div>
+        <!-- Nav -->
+        <nav class="nav-principal">
+            <div class="logo-nav">
+                <img src="img/SalesHubLogo.png" alt="SalesHub Logo">
+            </div>
         
-        <!-- Boton de Contactanos -->
-        <div class="botton-contactanos">
-            <a href="">CONTACTANOS <i class="fas fa-square-arrow-up-right"></i></a>
-        </div>
-    </nav>
+            <!-- Botón de Hamburguesa -->
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        
+            <!-- Ul de Servicios -->
+            <div class="servicios-container">
+                <ul>
+                    <li><a href="#servicios">SERVICIOS</a></li>
+                    <li><a href="#clientes">CLIENTES</a></li>
+                    <li><a href="#sobre-nosotros">SOBRE NOSOTROS</a></li>
+                </ul>
+                <!-- Botón de cerrar menú -->
+                <div class="close-menu">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <!-- Botón de Contáctanos -->
+            <div class="botton-contactanos">
+                <a href="#">CONTACTANOS <i class="fas fa-square-arrow-up-right"></i></a>
+            </div>
+        </nav>
 
     <!-- Funnel de Venta -->
     <div class="container">
@@ -233,13 +243,13 @@
                 <!-- Testimonio -->
                 <div id="testimonio-1" class="testimonio">
                     <p>
-                        “El equipo de Andrea, la verdad me ha dado muy buenos resultados a mi estudio, me ha gustado que saben como funciona toda la cuestión de redes que para cualquier negocio es muy importante, la atención es muy rápida, que como emprendedora me permite concentrarme en mi negocio. “
+                        “Felicidades al equipo de SalesHub, de aquí solo van para arriba. Excelente trabajo. - David Martinez “
                     </p>
 
                     <div class="testimonial-person">
                         <img src="img/testimonial/testimonial-1.svg" alt="">
 
-                        <div  class="testimonial-footer"><h3><span>@</span>brows.by.monicaperez</h3></div>
+                        <div  class="testimonial-footer"><h3><span>@</span>dk_soluciones</h3></div>
                     </div>
                 </div>
                 <!-- Testimonio -->
@@ -273,13 +283,13 @@
                 <!-- Testimonio -->
                 <div id="testimonio-4" class="testimonio">
                     <p>
-                        “Nos ha dado excelentes resultados en temas de engagement, ventas, acercamiento de los clientes, prospectos y una mejor organización en el tema de las campañas publicitarias”
+                        “Estoy muy contenta con el trabajo y asesoría de SalesHub, no solo hacen el servicio si no que te asesoran en cada paso.”
                     </p>
 
                     <div class="testimonial-person">
-                        <img src="img/testimonial/testimonial-2.svg" alt="">
+                        <img src="img/testimonial/testimonial-4.svg" alt="">
 
-                        <div  class="testimonial-footer"><h3><span>@</span>brows.by.monicaperez</h3></div>
+                        <div  class="testimonial-footer"><h3><span>@</span>cyntiaguzman.mx</h3></div>
                     </div>
                 </div>
             </div>
@@ -380,6 +390,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
 
 <!-- Animaciones  -->
+ <script src="main/nav-bar.js"></script>
 <script src= "main/number_30_init_animations.js"></script>
 <script src="main/movimientotexto.js"></script>
 <script src="main/animation-number-30.js"></script>
