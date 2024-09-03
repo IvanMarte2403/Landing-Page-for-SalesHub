@@ -18,6 +18,7 @@
   --background-color-1: #ffff;
   --background-color-2: #090042;
   --background-color-3: #000;
+  --background-color-4: #FF30D0;
   /* Fuentes */
   --font-1: "League Spartan";
   --font-2: "Phonk Regular";
@@ -30,7 +31,7 @@
   --font-size-xxl: 1.5rem; /* 24px */
   --font-size-xxxl: 3rem; /* 32px */
   --font-size-xxxxl: 4rem; /* 48px */
-  --font-size-span: 5rem;
+  --font-size-span: 8rem;
   /* Espaciados */
   --spacing-xs: 0.25rem; /* 4px */
   --spacing-sm: 0.5rem; /* 8px */
@@ -302,7 +303,7 @@ nav {
 
 .init-container {
   display: flex;
-  width: 50%;
+  width: 70%;
   flex-direction: column;
 }
 
@@ -317,7 +318,7 @@ nav {
   width: 100%;
 }
 .title-container .title2-container h1 {
-  font-size: var(--font-size-xxxxl);
+  font-size: 10vh;
   font-weight: 700;
   text-align: center;
 }
@@ -330,7 +331,7 @@ nav {
   font-family: var(--font-1);
   color: var(--color-third);
   font-size: var(--font-size-span);
-  margin-top: var(--spacing-md);
+  margin-top: var(--spacing-xxl);
   font-weight: 700;
   align-items: center;
   text-align: center;
@@ -413,7 +414,7 @@ nav {
 .divisor {
   width: 100%;
   margin-top: var(--spacing-xxxl);
-  background-color: var(--background-color-3);
+  background-color: var(--background-color-4);
 }
 
 .sobre-nosotros {
@@ -534,20 +535,44 @@ nav {
   width: 100%;
   margin-bottom: var(--spacing-xl);
 }
-
-.contenedor-servicio {
+.nuestros-servicios .categorias-servicios .contenedor-servicio {
   padding: var(--spacing-xl);
   background: rgba(217, 217, 217, 0.1); /* Color de fondo D9D9D9 al 10% de opacidad */
   margin-top: var(--spacing-lg);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-radius: 2rem;
+  border-radius: 2rem 2rem 0 0;
   width: 100%;
+  cursor: pointer;
 }
-.contenedor-servicio i {
+.nuestros-servicios .categorias-servicios .contenedor-servicio i {
   color: var(--color-primary);
   font-size: var(--font-size-xxl);
+  transition: transform 0.3s ease;
+}
+.nuestros-servicios .categorias-servicios .contenedor-servicio h1 {
+  margin: 0;
+}
+.nuestros-servicios .categorias-servicios .dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+  padding: 0 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 2rem 2rem;
+}
+.nuestros-servicios .categorias-servicios .dropdown-content p {
+  margin: 10px 0;
+}
+.nuestros-servicios .categorias-servicios.active .contenedor-servicio i {
+  transform: rotate(180deg);
+}
+.nuestros-servicios .categorias-servicios.active .dropdown-content {
+  max-height: 200px;
+  padding: 10px 10px;
 }
 
 @media only screen and (max-width: 620px) {

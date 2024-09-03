@@ -9,7 +9,7 @@
 
 .init-container{
     display: flex;
-    width: 50%;
+    width: 70%;
     flex-direction: column;
 }
 
@@ -23,7 +23,7 @@
         margin-bottom: var(--spacing-xl);   
         width: 100%;
         h1{
-            font-size: var(--font-size-xxxxl);
+            font-size: 10vh;
             font-weight: 700;
             text-align: center;
 
@@ -36,8 +36,8 @@
         .title-dias{
             font-family: var(--font-1);
             color: var(--color-third);
-            font-size: var(--font-size-span );
-            margin-top: var(--spacing-md);
+            font-size: var(--font-size-span);
+            margin-top: var(--spacing-xxl);
             font-weight: 700;
             align-items: center;
             text-align: center;
