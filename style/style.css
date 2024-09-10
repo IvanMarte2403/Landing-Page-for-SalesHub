@@ -609,6 +609,9 @@ nav {
   display: flex;
   flex-direction: row;
 }
+.clientes .clientes-title p {
+  font-size: var(--font-size-x xl);
+}
 
 .clients-selector {
   margin-top: var(--spacing-xl);
@@ -649,6 +652,9 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.container-clients .row-clients img {
+  border-radius: 1rem;
 }
 
 @media only screen and (max-width: 620px) {
