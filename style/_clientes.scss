@@ -112,9 +112,17 @@
 
     .container-clients{
         flex-direction: column;
-        
+        justify-content: center;
+        align-items: center;
     .row-clients{
-        flex-direction: row !important;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column !important;
+        margin-top: 0;
+        img{
+            width: 80%;
+            margin-bottom: var(--spacing-sm);
+        }
     }
     }
 
